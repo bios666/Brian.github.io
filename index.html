@@ -1,0 +1,439 @@
+<!DOCTYPE html> <!--Etiqueta de inicio usando HTML 5-->
+
+<html lang="es-ar">
+<head>
+    <meta charset="UTF-8"> <!--Son los caracteres usados-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Asegura la optimización de
+     dispositivos móviles y mejora la experiencia del usuario-->
+    
+    <title>Porfolio</title> <!--Titulo-->
+
+    <link rel="stylesheet" href="style.css"> <!-- Enlace a la hoja de estilo de CSS-->
+
+    <!--Icono que acompaña en la pestaña-->
+    <link rel="shorcout icon" href="./assets/favicon.ico">
+    
+    <!--Preconexión a Google Fonts para mejorar el rendimiento de carga-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <header class="encabezado"> <!--Encabezado de la pagina-->
+    <nav class="navegacion">
+      <li class="enlaces__item">
+        <a>
+          <img
+            class="enlaces__icono_grande"
+            src="./assets/imagenes/logos/Brian.png"
+            alt="logo de instagram"
+            title="Brian"
+          />
+        </a>
+      </li>
+      <ul class="enlaces"> <!--Lista de enlace de navegación-->
+
+        <li class="enlaces__item">
+            <a class="enlaces__enlaces"  href="./presentacion.html">Inicio </a>
+        </li>
+  
+        <li class="enlaces__item">
+            <a class="enlaces__enlaces"  href="./index.html">Sobre mi</a>
+        </li>
+  
+        <li class="enlaces__item">
+            <a class="enlaces__enlaces"  href="proyectos">Proyectos</a>
+        </li>
+      </ul>
+    </nav>
+    
+</header>
+
+    <main class="principal"> <!--Contenido principal de la pagina-->
+
+        <!--Selección de presentación-->
+        <section class="presentacion" id="presentacion">
+            <div class="presentacion__contenedor__info">
+                <h1 class="presentacion__titulo">Soy Desarrollador</h1>
+                
+                <!--Parrafo de presentacion dividido en diferentes partes para mejor visibilidad-->
+                <p class="presentacion__parrafo" 
+                >
+                Soy un profesional <b>trabajador, organizado y responsable</b>, 
+                especializado en <b>atención al cliente</b> y <b>servicio técnico</b>. 
+                Destaco en la <b>resolución de problemas técnicos</b>, 
+                asegurando <B>eficiencia y confiabilidad</B>. Tengo experiencia 
+                en implementar software de <b>puntos de venta avanzados y personalizados</b>, 
+                con conocimientos sólidos en <b>hardware</b> y <b>capacitación al cliente</b> para optimizar su uso.
+
+                </p>
+          </div>
+
+          <div class="presentacion__contenedor_botones">
+            <a href="/sobre-mi.html" role="button" class="boton">Sobre mi</a>
+            <a href="./assets/docs/cv.pdf" target="_blank" class="boton boton_oscuro" role="button">Descarga CV</a>
+          </div>
+        </section>
+
+
+
+        <!-- explicacion: Ahora agregaremos una seccion donde nos explayaremos 
+          sobre nuestra historia personal, para ello escribiremos lo siguiente -->
+        <article class="articulo sobre_mi" id="sobre-mi">
+
+          <h2 class="articulo__titulo">Un poco sobre mi</h2>
+
+          <div class="articulo__contenedor_descripciones">
+
+            <section class="seccion_descripcion">
+              <div class="seccion_descripcion__porta_retrato">
+                <img
+                  class="seccion_descripcion__imagen"
+                  src="./assets/imagenes/profile/trabajo.jpeg"
+                  alt="imagen de escritorio"
+                  title="área de trabajo"
+                />
+              </div>
+              <div
+                class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                aria-label="descripcion personal"
+              >
+                <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                  Mi historia
+                </h3>
+                <!--1-->
+                <p
+                  class="seccion_descripcion__parrafo"
+                  aria-label="Detalles de mi historia"
+                  aria-describedby="mi_historia_titulo"
+                >
+                Desde que era niño, siempre me sentí atraído por la tecnología. Los dispositivos electrónicos me fascinaban, 
+                y mi curiosidad me llevó a estudiar ingeniería en sistemas de la información. A lo largo de los años, he trabajado
+                 en el área de atención al cliente, y puedo decir con orgullo que soy un profesional resolutivo y apasionado
+                </p>
+                <!--2-->
+                <p
+                  class="seccion_descripcion__parrafo"
+                  aria-label="Detalles de mi historia"
+                  aria-describedby="mi_historia_titulo"
+                >
+                Mi día a día implica enfrentar desafíos técnicos. Ya sea una computadora lenta, una impresora 
+                rebelde o un sistema de punto de venta en problemas, siempre estoy dispuesto a encontrar una solución. 
+                Pero no me detengo ahí. Mi objetivo es asegurar la máxima eficiencia y confiabilidad de los equipos que atiendo.
+                </p>
+                <!--3-->
+                <p
+                  class="seccion_descripcion__parrafo"
+                  aria-label="Detalles de mi historia"
+                  aria-describedby="mi_historia_titulo"
+                >
+                Una de mis especialidades es la implementación de software de puntos de venta. No solo instalo el software, 
+                sino que también me aseguro de que se integre perfectamente con el hardware existente. Además, brindo capacitación 
+                integral al cliente para que puedan aprovechar al máximo las soluciones proporcionadas.
+                </p>
+                <!--4-->
+                <p
+                  class="seccion_descripcion__parrafo"
+                  aria-label="Detalles de mi historia"
+                  aria-describedby="mi_historia_titulo"
+                >
+                Recuerdo una vez durante una tormenta eléctrica. El sistema de punto de venta de una tienda se apagó por completo. 
+                Los empleados estaban nerviosos, y las ventas se detuvieron. Llegué corriendo bajo la lluvia, con mi caja de herramientas
+                y una sonrisa tranquilizadora. Después de horas de trabajo, logré restablecer el sistema y capacitar al personal sobre 
+                cómo evitar futuros problemas. La tienda reabrió sus puertas, y los clientes me aplaudieron como un héroe.
+                </p>
+                <!--5-->
+                <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+                >
+                A lo largo de mi carrera, he aprendido que la tecnología no es solo sobre máquinas; se trata de las personas 
+                detrás de ellas. Cada problema técnico es una oportunidad para hacer una diferencia en la vida de alguien. 
+                Y eso es lo que me motiva todos los días.
+              </p>
+            </div>
+            </section>
+            <!-- explicacion: seguidamente tendremos una seccion muy similar a la anterior 
+              pero cambiaremos el orden de los elementos dejando la imagen al final -->
+            <section class="seccion_descripcion">
+              <!--Los DIV son contenedores-->
+              <div class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+                aria-label="descripcion personal"
+              >
+                <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                  Mis hobbies
+                </h3>
+                <p
+                  class="seccion_descripcion__parrafo"
+                  aria-label="Detalles de mis hobbies"
+                  aria-describedby="mis_hobbies_titulo"
+                >
+                Mis pasatiempos son variados y me brindan alegría. En primer lugar, 
+                disfruto estudiar y aprender cosas nuevas. Ya sea explorando un nuevo 
+                idioma, profundizando en un tema de interés o adquiriendo habilidades técnicas, 
+                siempre encuentro satisfacción en el proceso de aprendizaje.
+                </p>
+                <p
+                  class="seccion_descripcion__parrafo"
+                  aria-label="Detalles de mis hobbies"
+                  aria-describedby="mis_hobbies_titulo"
+                >
+                Además, me apasiona estar al tanto de las últimas tecnologías. 
+                Investigar avances en inteligencia artificial, dispositivos móviles, 
+                o cualquier innovación tecnológica me resulta fascinante. Observar cómo 
+                la sociedad se transforma gracias a estos avances es emocionante.
+                </p>
+                <p
+                  class="seccion_descripcion__parrafo"
+                  aria-label="Detalles de mis hobbies"
+                  aria-describedby="mis_hobbies_titulo"
+                >
+                Otro de mis hobbies es salir a caminar. La naturaleza y el aire 
+                libre me relajan. Ya sea en un parque cercano o en un sendero en el bosque, 
+                disfruto de la tranquilidad y la oportunidad de desconectar del ajetreo diario.
+                </p>
+              </div>
+              <div class="seccion_descripcion__porta_retrato">
+                <img
+                  class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
+                  src="./assets/imagenes/profile/trabajo3.jpg"
+                  alt="foto mientras salgo a caminar"
+                  title="paseo"
+                />
+              </div>
+            </section>
+          </div>
+        </article>
+
+  <!-- explicacion: En la seccion que sigue agregaremos los proyectos en los que trabajaron,
+      no se preocupen si todavia no cuentan con ninguno, en el momento que comiencen a construirlos 
+      podran ir actualizando la informacion de esta seccion -->
+      <article class="articulo proyectos" id="proyectos">
+        <h2 class="articulo__titulo">Mis proyectos</h2>
+        <div class="contenedor_tarjetas_grid">
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          > 
+            <img
+              class="tarjeta__imagen"
+              src="./assets/imagenes/proyectos/punto de venta.png"
+              alt="imagen del proyecto"
+              title="Punto de venta"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Punto de venta</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_1"
+              >
+                Mi primer proyecto fue el desarrollo de un sistema de punto de venta diseñado 
+                para agilizar las transacciones comerciales y mejorar la experiencia de compra 
+                tanto para los clientes como para el personal de ventas. Me enfoqué en crear una 
+                interfaz intuitiva que permitiera un manejo eficiente del inventario, procesamiento 
+                rápido de ventas y generación de reportes detallados para la toma de decisiones. 
+                Este proyecto no solo fortaleció mis habilidades técnicas en programación y diseño 
+                de bases de datos, sino que también me permitió comprender mejor las necesidades 
+                operativas del sector retail.
+              </p>
+              <a href="#" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <!-- explicacion: pueden agregar tantas tarjetas como deseen, para ejemplificar agregaremos seis. 
+            Podemos hacerlo simplemente copiando y pegando. Yo en mi caso en algunas tarjetas agregare un pequeño cambio a los botones  -->
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/imagenes/proyectos/servicio técnico.jpeg"
+              alt="imagen del proyecto"
+              title="proyecto 2"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_2">Servicio técnico</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_2"
+              >
+              Mi segundo proyecto consistió en establecer un servicio 
+              técnico para computadoras, donde ofrecía soluciones de 
+              mantenimiento y reparación de hardware y software. Me dediqué
+              a diagnosticar y resolver problemas técnicos, optimizar el 
+              rendimiento de los sistemas y asegurar la seguridad de los datos 
+              de los usuarios. Este proyecto me permitió desarrollar excelentes
+              habilidades de resolución de problemas y atención al cliente, así 
+              como una profunda comprensión de la gestión y operación de un negocio de servicios técnicos.
+              </p>
+              <a href="#" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/imagenes/proyectos/sistema de turnos.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 3"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_3">Sistema de turnos de Hospital</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_3"
+              >
+              En mi tercer proyecto, tomé la iniciativa de desarrollar 
+              un sistema de gestión de turnos para un hospital, con el 
+              objetivo de mejorar la eficiencia en la programación de citas
+              y reducir los tiempos de espera para los pacientes. Implementé 
+              funcionalidades como la reserva en línea, recordatorios automáticos 
+              y una interfaz accesible tanto para el personal médico como para los 
+              pacientes. Este sistema no solo optimizó los procesos administrativos 
+              del hospital, sino que también contribuyó a una mejor experiencia 
+              del paciente y una gestión más efectiva del tiempo del personal.
+              </p>
+              <a href="#" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/imagenes/proyectos/aplicacion del clima.jpeg"
+              alt="imagen del proyecto"
+              title="proyecto 4"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_4">Aplicación del Clima</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_4"
+              >
+              Mi cuarto proyecto fue el desarrollo de una aplicación del clima, 
+              diseñada para proporcionar pronósticos precisos y actualizaciones 
+              en tiempo real sobre las condiciones meteorológicas. Me concentré 
+              en integrar diversas fuentes de datos meteorológicos y en implementar 
+              algoritmos avanzados para asegurar la precisión de la información. 
+              La aplicación también incluía características personalizables, como 
+              alertas de clima severo y seguimiento de patrones climáticos locales. 
+              Este proyecto mejoró mis habilidades en el manejo de APIs y en el 
+              procesamiento de datos en gran escala.
+              </p>
+              <a href="#" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+        </div>
+      </article>
+      <!-- repaso del articulo proyectos -->
+    </main>
+    <!-- repaso de todo lo incluido en la etiqueta main -->
+
+    <!-- Por ultimo deben agregar la etiqueta footer. 
+      En esta aparecera nuestra informacion de contacto y 
+      también inluiremos enlaces de navegacion y derechos. -->
+    <footer class="pie_de_pagina" role="contentinfo">
+
+      <!-- explicacion: la primer columna sera para nuestras redes,
+        cabe aclarar que la estructura sera similar en todos los casos y solo habrá pequeños cambios -->
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+        <ul class="enlaces enlaces_redes">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://github.com/bios666"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/imagenes/logos/github-logo.png"
+                alt="logo de github"
+                title="github"
+            /></a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://www.instagram.com/briian_9b/"
+              target="_blank"
+            >
+              <img
+                class="enlaces__icono"
+                src="./assets/imagenes/logos/ig-logo.png"
+                alt="logo de instagram"
+                title="instagram"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- explicacion: la segunda columna sera para nuestros medios de contacto  -->
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="brianeze131@gmail.com"
+              target="_blank"
+              >Mail: Brianeze131@gmail.com</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a 
+            class="enlaces__enlace enlaces__enlace_footer"
+            href=""
+            target="_blank"
+            >Telefono: +54 9 3725 544990</a>
+          </li>
+        </ul>
+      </div>
+      <!-- explicacion: la ultima columna sera para los enlaces de navegacion -->
+      <div class="pie_de_pagina__columna" role="navigation">
+        <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="#presentacion"
+              >Inicio</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+              >Sobre mi</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+              >Proyectos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <!-- por ultimo los derechos de la pagina -->
+      <div class="pie_de_pagina__copyright">
+        <p>©️Copyright 2024</p>
+      </div>
+    </footer>
+    <!-- repaso de los elementos en el footer -->
+  </body>
+</html>

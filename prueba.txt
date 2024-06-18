@@ -1,0 +1,26 @@
+<header class="Encabezado"> <!--Encabezado de la pagina-->
+
+        <nav class="navegacion">  </nav> <!--Navegación principal-->
+
+        <!--Enlace al inicio del sitio-->
+        <a class="navegacion_enlace" href="./index.html">
+            <h1 class="navegacion_titulo" >Brian</h1>
+        </a>
+
+        <ul class="enlaces"> <!--Lista de enlace de navegación-->
+
+            <li class="enlaces__item">
+                <a class="enlaces__enlaces"  href="./presentacion.html">Inicio </a>
+            </li>
+
+            <li class="enlaces__item">
+                <a class="enlaces__enlaces"  href="./index.html">Sobre mi</a>
+            </li>
+
+            <li class="enlaces__item">
+                <a class="enlaces__enlaces"  href="proyectos">Proyectos</a>
+            </li>
+
+        </ul>
+        
+    </header>
