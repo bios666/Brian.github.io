@@ -3,15 +3,14 @@
 <html lang="es-ar">
 <head>
     <meta charset="UTF-8"> <!--Son los caracteres usados-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Asegura la optimización de
-     dispositivos móviles y mejora la experiencia del usuario-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Asegura la optimización de dispositivos móviles y mejora la experiencia del usuario-->
     
     <title>Porfolio</title> <!--Titulo-->
 
     <link rel="stylesheet" href="style.css"> <!-- Enlace a la hoja de estilo de CSS-->
 
     <!--Icono que acompaña en la pestaña-->
-    <link rel="shorcout icon" href="./assets/favicon.ico">
+    <link rel="shortcut icon" href="./assets/favicon.ico">
     
     <!--Preconexión a Google Fonts para mejorar el rendimiento de carga-->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -19,7 +18,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
 </head>
 
-<body>
+<body class="scroll">
   <header class="encabezado"> <!--Encabezado de la pagina-->
     <nav class="navegacion">
       <li class="enlaces__item">
@@ -27,7 +26,7 @@
           <img
             class="enlaces__icono_grande"
             src="./assets/imagenes/logos/Brian.png"
-            alt="logo de instagram"
+            alt="logo de Brian"
             title="Brian"
           />
         </a>
@@ -35,186 +34,144 @@
       <ul class="enlaces"> <!--Lista de enlace de navegación-->
 
         <li class="enlaces__item">
-            <a class="enlaces__enlaces"  href="./presentacion.html">Inicio </a>
+            <a class="enlaces__enlace"  href="./presentacion.html">Inicio </a>
         </li>
   
         <li class="enlaces__item">
-            <a class="enlaces__enlaces"  href="./index.html">Sobre mi</a>
+            <a class="enlaces__enlace"  href="./index.html">Sobre mi</a>
         </li>
   
         <li class="enlaces__item">
-            <a class="enlaces__enlaces"  href="proyectos">Proyectos</a>
+            <a class="enlaces__enlace"  href="proyectos">Proyectos</a>
         </li>
       </ul>
     </nav>
-    
-</header>
+  </header>
 
-    <main class="principal"> <!--Contenido principal de la pagina-->
+<main class="principal"> <!--Contenido principal de la pagina-->
 
-        <!--Selección de presentación-->
-        <section class="presentacion" id="presentacion">
-            <div class="presentacion__contenedor__info">
-                <h1 class="presentacion__titulo">Soy Desarrollador</h1>
-                
-                <!--Parrafo de presentacion dividido en diferentes partes para mejor visibilidad-->
-                <p class="presentacion__parrafo" 
-                >
+    <!--Selección de presentación-->
+    <section class="articulo presentacion" id="presentacion">
+        <div class="presentacion__contenedor__info">
+            <h1 class="presentacion__titulo">Soy Desarrollador</h1>
+            
+            <!--Parrafo de presentacion dividido en diferentes partes para mejor visibilidad-->
+            <p class="presentacion__parrafo">
                 Soy un profesional <b>trabajador, organizado y responsable</b>, 
                 especializado en <b>atención al cliente</b> y <b>servicio técnico</b>. 
                 Destaco en la <b>resolución de problemas técnicos</b>, 
-                asegurando <B>eficiencia y confiabilidad</B>. Tengo experiencia 
+                asegurando <b>eficiencia y confiabilidad</b>. Tengo experiencia 
                 en implementar software de <b>puntos de venta avanzados y personalizados</b>, 
                 con conocimientos sólidos en <b>hardware</b> y <b>capacitación al cliente</b> para optimizar su uso.
+            </p>
 
-                </p>
-
-                <div class="presentacion__contenedor_botones">
-                  <a href="/sobre-mi.html" role="button" class="boton">Sobre mi</a>
-                  <a href="./assets/docs/cv.pdf" target="_blank" class="boton boton_oscuro" role="button">Descarga CV</a>
-                </div>
-          </div>
-
-         
-        </section>
-
-
-
-        <!-- explicacion: Ahora agregaremos una seccion donde nos explayaremos 
-          sobre nuestra historia personal, para ello escribiremos lo siguiente -->
-        <article class="articulo sobre_mi" id="sobre-mi">
-
-          <h2 class="articulo__titulo">Un poco sobre mi</h2>
-
-          <div class="articulo__contenedor_descripciones">
-
-            <section class="seccion_descripcion">
-              <div class="seccion_descripcion__porta_retrato">
-                <img
-                  class="seccion_descripcion__imagen"
-                  src="./assets/imagenes/profile/trabajo.jpeg"
-                  alt="imagen de escritorio"
-                  title="área de trabajo"
-                />
-              </div>
-              <div
-                class="seccion_descripcion__info scroll scroll_fino scroll_gris"
-                aria-label="descripcion personal"
-              >
-                <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
-                  Mi historia
-                </h3>
-                <!--1-->
-                <p
-                  class="seccion_descripcion__parrafo"
-                  aria-label="Detalles de mi historia"
-                  aria-describedby="mi_historia_titulo"
-                >
-                Desde que era niño, siempre me sentí atraído por la tecnología. Los dispositivos electrónicos me fascinaban, 
-                y mi curiosidad me llevó a estudiar ingeniería en sistemas de la información. A lo largo de los años, he trabajado
-                 en el área de atención al cliente, y puedo decir con orgullo que soy un profesional resolutivo y apasionado
-                </p>
-                <!--2-->
-                <p
-                  class="seccion_descripcion__parrafo"
-                  aria-label="Detalles de mi historia"
-                  aria-describedby="mi_historia_titulo"
-                >
-                Mi día a día implica enfrentar desafíos técnicos. Ya sea una computadora lenta, una impresora 
-                rebelde o un sistema de punto de venta en problemas, siempre estoy dispuesto a encontrar una solución. 
-                Pero no me detengo ahí. Mi objetivo es asegurar la máxima eficiencia y confiabilidad de los equipos que atiendo.
-                </p>
-                <!--3-->
-                <p
-                  class="seccion_descripcion__parrafo"
-                  aria-label="Detalles de mi historia"
-                  aria-describedby="mi_historia_titulo"
-                >
-                Una de mis especialidades es la implementación de software de puntos de venta. No solo instalo el software, 
-                sino que también me aseguro de que se integre perfectamente con el hardware existente. Además, brindo capacitación 
-                integral al cliente para que puedan aprovechar al máximo las soluciones proporcionadas.
-                </p>
-                <!--4-->
-                <p
-                  class="seccion_descripcion__parrafo"
-                  aria-label="Detalles de mi historia"
-                  aria-describedby="mi_historia_titulo"
-                >
-                Recuerdo una vez durante una tormenta eléctrica. El sistema de punto de venta de una tienda se apagó por completo. 
-                Los empleados estaban nerviosos, y las ventas se detuvieron. Llegué corriendo bajo la lluvia, con mi caja de herramientas
-                y una sonrisa tranquilizadora. Después de horas de trabajo, logré restablecer el sistema y capacitar al personal sobre 
-                cómo evitar futuros problemas. La tienda reabrió sus puertas, y los clientes me aplaudieron como un héroe.
-                </p>
-                <!--5-->
-                <p
-                class="seccion_descripcion__parrafo"
-                aria-label="Detalles de mi historia"
-                aria-describedby="mi_historia_titulo"
-                >
-                A lo largo de mi carrera, he aprendido que la tecnología no es solo sobre máquinas; se trata de las personas 
-                detrás de ellas. Cada problema técnico es una oportunidad para hacer una diferencia en la vida de alguien. 
-                Y eso es lo que me motiva todos los días.
-              </p>
+            <div class="presentacion__contenedor_botones">
+                <a href="/sobre-mi.html" role="button" class="boton">Sobre mi</a>
+                <a href="./assets/CV.pdf" target="_blank" class="boton boton_oscuro" role="button">Descarga CV</a>
             </div>
-            </section>
-            <!-- explicacion: seguidamente tendremos una seccion muy similar a la anterior 
-              pero cambiaremos el orden de los elementos dejando la imagen al final -->
+        </div>
+    </section>
+
+    <!-- explicacion: Ahora agregaremos una seccion donde nos explayaremos 
+    sobre nuestra historia personal, para ello escribiremos lo siguiente -->
+    <article class="articulo sobre_mi" id="sobre-mi">
+
+        <h2 class="articulo__titulo">Un poco sobre mi</h2>
+
+        <div class="articulo__contenedor_descripciones">
+
             <section class="seccion_descripcion">
-              <!--Los DIV son contenedores-->
-              <div class="seccion_descripcion__info scroll scroll_fino scroll_gris"
-                aria-label="descripcion personal"
-              >
-                <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
-                  Mis hobbies
-                </h3>
-                <p
-                  class="seccion_descripcion__parrafo"
-                  aria-label="Detalles de mis hobbies"
-                  aria-describedby="mis_hobbies_titulo"
-                >
-                Mis pasatiempos son variados y me brindan alegría. En primer lugar, 
-                disfruto estudiar y aprender cosas nuevas. Ya sea explorando un nuevo 
-                idioma, profundizando en un tema de interés o adquiriendo habilidades técnicas, 
-                siempre encuentro satisfacción en el proceso de aprendizaje.
-                </p>
-                <p
-                  class="seccion_descripcion__parrafo"
-                  aria-label="Detalles de mis hobbies"
-                  aria-describedby="mis_hobbies_titulo"
-                >
-                Además, me apasiona estar al tanto de las últimas tecnologías. 
-                Investigar avances en inteligencia artificial, dispositivos móviles, 
-                o cualquier innovación tecnológica me resulta fascinante. Observar cómo 
-                la sociedad se transforma gracias a estos avances es emocionante.
-                </p>
-                <p
-                  class="seccion_descripcion__parrafo"
-                  aria-label="Detalles de mis hobbies"
-                  aria-describedby="mis_hobbies_titulo"
-                >
-                Otro de mis hobbies es salir a caminar. La naturaleza y el aire 
-                libre me relajan. Ya sea en un parque cercano o en un sendero en el bosque, 
-                disfruto de la tranquilidad y la oportunidad de desconectar del ajetreo diario.
-                </p>
-              </div>
-              <div class="seccion_descripcion__porta_retrato">
-                <img
-                  class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
-                  src="./assets/imagenes/profile/paseo.jpeg"
-                  alt="foto mientras salgo a caminar"
-                  title="paseo"
-                />
-              </div>
+                <div class="seccion_descripcion__porta_retrato">
+                    <img
+                        class="seccion_descripcion__imagen"
+                        src="./assets/imagenes/profile/trabajo.jpeg"
+                        alt="imagen de escritorio"
+                        title="área de trabajo"
+                    />
+                </div>
+                <div class="seccion_descripcion__info scroll scroll_fino scroll_gris" 
+                    aria-label="descripcion personal">
+
+                    <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                        Mi historia
+                    </h3>
+                    <!--1-->
+                    <p class="seccion_descripcion__parrafo" aria-label="Detalles de mi historia" aria-describedby="mi_historia_titulo">
+                        Desde que era niño, siempre me sentí atraído por la tecnología. Los dispositivos electrónicos me fascinaban, 
+                        y mi curiosidad me llevó a estudiar ingeniería en sistemas de la información. A lo largo de los años, he trabajado
+                        en el área de atención al cliente, y puedo decir con orgullo que soy un profesional resolutivo y apasionado.
+                    </p>
+                    <!--2-->
+                    <p class="seccion_descripcion__parrafo" aria-label="Detalles de mi historia" aria-describedby="mi_historia_titulo">
+                        Mi día a día implica enfrentar desafíos técnicos. Ya sea una computadora lenta, una impresora 
+                        rebelde o un sistema de punto de venta en problemas, siempre estoy dispuesto a encontrar una solución. 
+                        Pero no me detengo ahí. Mi objetivo es asegurar la máxima eficiencia y confiabilidad de los equipos que atiendo.
+                    </p>
+                    <!--3-->
+                    <p class="seccion_descripcion__parrafo" aria-label="Detalles de mi historia" aria-describedby="mi_historia_titulo">
+                        Una de mis especialidades es la implementación de software de puntos de venta. No solo instalo el software, 
+                        sino que también me aseguro de que se integre perfectamente con el hardware existente. Además, brindo capacitación 
+                        integral al cliente para que puedan aprovechar al máximo las soluciones proporcionadas.
+                    </p>
+                    <!--4-->
+                    <p class="seccion_descripcion__parrafo" aria-label="Detalles de mi historia" aria-describedby="mi_historia_titulo">
+                        Recuerdo una vez durante una tormenta eléctrica. El sistema de punto de venta de una tienda se apagó por completo. 
+                        Los empleados estaban nerviosos, y las ventas se detuvieron. Llegué corriendo bajo la lluvia, con mi caja de herramientas
+                        y una sonrisa tranquilizadora. Después de horas de trabajo, logré restablecer el sistema y capacitar al personal sobre 
+                        cómo evitar futuros problemas. La tienda reabrió sus puertas, y los clientes me aplaudieron como un héroe.
+                    </p>
+                    <!--5-->
+                    <p class="seccion_descripcion__parrafo" aria-label="Detalles de mi historia" aria-describedby="mi_historia_titulo">
+                        A lo largo de mi carrera, he aprendido que la tecnología no es solo sobre máquinas; se trata de las personas 
+                        detrás de ellas. Cada problema técnico es una oportunidad para hacer una diferencia en la vida de alguien. 
+                        Y eso es lo que me motiva todos los días.
+                    </p>
+                </div>
             </section>
+
+            <!-- explicacion: seguidamente tendremos una seccion muy similar a la anterior 
+            pero cambiaremos el orden de los elementos dejando la imagen al final -->
+            <section class="seccion_descripcion">
+                <div class="seccion_descripcion__info scroll scroll_fino scroll_gris" aria-label="descripcion personal">
+                    <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">Mis hobbies</h3>
+                    <p class="seccion_descripcion__parrafo" aria-label="Detalles de mis hobbies" aria-describedby="mis_hobbies_titulo">
+                        Mis pasatiempos son variados y me brindan alegría. En primer lugar, 
+                        disfruto estudiar y aprender cosas nuevas. Ya sea explorando un nuevo 
+                        idioma, profundizando en un tema de interés o adquiriendo habilidades técnicas, 
+                        siempre encuentro satisfacción en el proceso de aprendizaje.
+                    </p>
+                    <p class="seccion_descripcion__parrafo" aria-label="Detalles de mis hobbies" aria-describedby="mis_hobbies_titulo">
+                        Además, me apasiona estar al tanto de las últimas tecnologías. 
+                        Investigar avances en inteligencia artificial, dispositivos móviles, 
+                        o cualquier innovación tecnológica me resulta fascinante. Observar cómo 
+                        la sociedad se transforma gracias a estos avances es emocionante.
+                    </p>
+                    <p class="seccion_descripcion__parrafo" aria-label="Detalles de mis hobbies" aria-describedby="mis_hobbies_titulo">
+                        Otro de mis hobbies es salir a caminar. La naturaleza y el aire 
+                        libre me relajan. Ya sea en un parque cercano o en un sendero en el bosque, 
+                        disfruto de la tranquilidad y la oportunidad de desconectar del ajetreo diario.
+                    </p>
+                </div>
+                <div class="seccion_descripcion__porta_retrato">
+                    <img
+                        class="seccion_descripcion__imagen seccion_descripcion__imagen_variante"
+                        src="./assets/imagenes/profile/paseo.jpeg"
+                        alt="foto mientras salgo a caminar"
+                        title="paseo"
+                    />
+                </div>
+            </section>
+       
+
           </div>
-        </article>
+    </article>
 
   <!-- explicacion: En la seccion que sigue agregaremos los proyectos en los que trabajaron,
       no se preocupen si todavia no cuentan con ninguno, en el momento que comiencen a construirlos 
       podran ir actualizando la informacion de esta seccion -->
-      <article class="articulo proyectos" id="proyectos">
+    <article class="articulo proyectos" id="proyectos">
         <h2 class="articulo__titulo">Mis proyectos</h2>
-        
+
         <div class="contenedor_tarjetas_grid">
           <article
             class="tarjeta"
@@ -344,8 +301,8 @@
               <a href="#" class="boton" target="_blank">Ver proyecto</a>
             </div>
           </article>
-        </div>
-      </article>
+       
+    </article>
       <!-- repaso del articulo proyectos -->
     </main>
     <!-- repaso de todo lo incluido en la etiqueta main -->
